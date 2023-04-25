@@ -2,10 +2,24 @@ input: .
 output: .retype
 url: # Add your website address here
 branding:
-  title: Project Name
+  title: Wasmedge Plugin
   label: Docs
 links:
-- text: Getting Started
-  link: https://retype.com/guides/getting-started/
+- text: Home
+  link: index.md
+  icon: home
+- text: Discord
+  link: https://discord.com/invite/JHxMj9EQbA
+  target: blank
+  icon: Static/discord.png
+- text: Twitter
+  link: https://twitter.com/realwasmedge?lang=en
+  target: blank
+  icon: Static/twitter.png
+- text: Make your first contribution
+  link: https://github.com/WasmEdge/WasmEdge/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22
+  target: blank 
+  icon: Static/github.png    
 footer:
-  copyright: "&copy; Copyright {{ year }}. All rights reserved."
+  copyright: "&copy; Copyright Wasmedge {{ year }}. All rights reserved."
+icon: Static/logo.svg  
