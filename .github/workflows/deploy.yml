@@ -1,0 +1,27 @@
+name: Retype Site to GH Pages
+on:
+  # To trigger it manually
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    name: Publish to retype branch
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: retypeapp/action-build@latest
+
+      - uses: retypeapp/action-github-pages@latest
+        with:
+          # The branch where you want to push the built files
+          branch: gh-pages
+          update-branch: true
